@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register — StudentHub</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="/" class="brand">
+        <span class="brand-mark">SH</span>
+        <span class="brand-text">
+          <span class="brand-name">StudentHub</span>
+          <span class="brand-tagline">Smart • Simple • Student-Centric</span>
+        </span>
+      </a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/register">Register</a>
+        <a href="/login">Login</a>
+      </div>
+      <div class="nav-actions">
+        <a href="/login" class="btn btn-outline">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="auth-page">
+    <div class="auth-card">
+      <div class="auth-head">
+        <h1>Create your student account</h1>
+        <p>Fill in your details below to register with StudentHub.</p>
+      </div>
+
+      <div id="formMessage" class="message-box"></div>
+
+      <form id="registerForm" novalidate>
+
+        <div class="form-section-title">Personal Information</div>
+        <div class="form-grid">
+          <div class="field full">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Rahul Kumar" />
+            <span class="field-error-text" data-error-for="name"></span>
+          </div>
+          <div class="field">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" placeholder="e.g. 20" min="10" max="100" />
+            <span class="field-error-text" data-error-for="age"></span>
+          </div>
+          <div class="field">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" />
+            <span class="field-error-text" data-error-for="dob"></span>
+          </div>
+          <div class="field full">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+              <option value="">Select gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+              <option value="Prefer not to say">Prefer not to say</option>
+            </select>
+            <span class="field-error-text" data-error-for="gender"></span>
+          </div>
+        </div>
+
+        <div class="form-section-title">Contact Information</div>
+        <div class="form-grid">
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="e.g. rahul@gmail.com" />
+            <span class="field-error-text" data-error-for="email"></span>
+          </div>
+          <div class="field">
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="e.g. 9876543210" />
+            <span class="field-error-text" data-error-for="mobile"></span>
+          </div>
+          <div class="field full">
+            <label for="address">Address</label>
+            <textarea id="address" name="address" placeholder="City, State"></textarea>
+            <span class="field-error-text" data-error-for="address"></span>
+          </div>
+        </div>
+
+        <div class="form-section-title">Academic Information</div>
+        <div class="form-grid">
+          <div class="field">
+            <label for="course">Course</label>
+            <input type="text" id="course" name="course" placeholder="e.g. B.Tech CSE" />
+            <span class="field-error-text" data-error-for="course"></span>
+          </div>
+          <div class="field">
+            <label for="year">Year of Study</label>
+            <select id="year" name="year">
+              <option value="">Select year</option>
+              <option value="1st Year">1st Year</option>
+              <option value="2nd Year">2nd Year</option>
+              <option value="3rd Year">3rd Year</option>
+              <option value="4th Year">4th Year</option>
+            </select>
+            <span class="field-error-text" data-error-for="year"></span>
+          </div>
+        </div>
+
+        <div class="form-section-title">Account Information</div>
+        <div class="form-grid">
+          <div class="field">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="e.g. rahul123" />
+            <span class="field-error-text" data-error-for="username"></span>
+          </div>
+          <div class="field">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="At least 6 characters" />
+            <small class="hint">Minimum 6 characters.</small>
+            <span class="field-error-text" data-error-for="password"></span>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block" id="registerBtn">Create Account</button>
+
+        <div class="form-footer-link">
+          Already have an account? <a href="/login">Login</a>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

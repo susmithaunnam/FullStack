@@ -1,0 +1,12 @@
+{
+  "name": "studenthub",
+  "version": "1.0.0",
+  "description": "StudentHub - Student Management System (Full Stack academic project using Node.js, Express, and JSON file storage)",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.22.3"
+  }
+}

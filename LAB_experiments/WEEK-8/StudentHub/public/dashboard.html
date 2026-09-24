@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — StudentHub</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="/" class="brand">
+        <span class="brand-mark">SH</span>
+        <span class="brand-text">
+          <span class="brand-name">StudentHub</span>
+          <span class="brand-tagline">Smart • Simple • Student-Centric</span>
+        </span>
+      </a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+      </div>
+      <div class="nav-actions">
+        <button id="logoutBtn" class="btn btn-danger">Logout</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="dashboard-page">
+    <div class="container">
+
+      <div id="loadingState" class="dashboard-loading">
+        <p>Loading your dashboard...</p>
+      </div>
+
+      <div id="dashboardContent" style="display:none;">
+        <div class="dashboard-header">
+          <div>
+            <h1 id="welcomeHeading">Welcome!</h1>
+            <p>Here is your student profile on record.</p>
+          </div>
+        </div>
+
+        <div class="profile-card">
+          <div class="profile-card-head">
+            <div class="profile-avatar" id="avatarInitial">S</div>
+            <div>
+              <h2 id="profileName">Student Name</h2>
+              <span id="profileCourseYear">Course • Year</span>
+            </div>
+          </div>
+
+          <div class="profile-list">
+            <div class="profile-row">
+              <span class="label">Full Name</span>
+              <span class="value" id="fieldName">—</span>
+            </div>
+            <div class="profile-row">
+              <span class="label">Email</span>
+              <span class="value" id="fieldEmail">—</span>
+            </div>
+            <div class="profile-row">
+              <span class="label">Username</span>
+              <span class="value" id="fieldUsername">—</span>
+            </div>
+            <div class="profile-row">
+              <span class="label">Mobile</span>
+              <span class="value" id="fieldMobile">—</span>
+            </div>
+            <div class="profile-row">
+              <span class="label">Date of Birth</span>
+              <span class="value" id="fieldDob">—</span>
+            </div>
+            <div class="profile-row">
+              <span class="label">Gender</span>
+              <span class="value" id="fieldGender">—</span>
+            </div>
+            <div class="profile-row">
+              <span class="label">Course</span>
+              <span class="value" id="fieldCourse">—</span>
+            </div>
+            <div class="profile-row">
+              <span class="label">Year of Study</span>
+              <span class="value" id="fieldYear">—</span>
+            </div>
+            <div class="profile-row">
+              <span class="label">Address</span>
+              <span class="value" id="fieldAddress">—</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login — StudentHub</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="/" class="brand">
+        <span class="brand-mark">SH</span>
+        <span class="brand-text">
+          <span class="brand-name">StudentHub</span>
+          <span class="brand-tagline">Smart • Simple • Student-Centric</span>
+        </span>
+      </a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/register">Register</a>
+        <a href="/login">Login</a>
+      </div>
+      <div class="nav-actions">
+        <a href="/register" class="btn btn-primary">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="auth-split">
+    <aside class="auth-side">
+      <div class="auth-side-inner">
+        <div class="side-mark">SH</div>
+        <h2>Welcome back to your record</h2>
+        <p>Log in to pick up right where you left off — your profile, course, and details, exactly as you registered them.</p>
+        <blockquote>&ldquo;One login, your whole student profile.&rdquo;</blockquote>
+      </div>
+    </aside>
+
+    <div class="auth-form-panel">
+      <div class="auth-form-panel-inner">
+        <div class="auth-head">
+          <h1>Login</h1>
+          <p>Enter your credentials to access your dashboard.</p>
+        </div>
+
+        <div id="formMessage" class="message-box"></div>
+
+        <form id="loginForm" novalidate>
+          <div class="field">
+            <label for="identifier">Username or Email</label>
+            <input type="text" id="identifier" name="identifier" placeholder="e.g. rahul123 or rahul@gmail.com" />
+            <span class="field-error-text" data-error-for="identifier"></span>
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Your password" />
+            <span class="field-error-text" data-error-for="password"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" id="loginBtn">Login</button>
+
+          <div class="form-footer-link">
+            Don't have an account? <a href="/register">Register</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
