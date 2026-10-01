@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f3f5f8;
+  color: #1d2733;
+}
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+header h1 {
+  margin: 0;
+  color: #b3122d; /* blood-red */
+}
+
+header p {
+  margin: 4px 0 24px;
+  color: #7ab2eb;
+}
+
+/* form and list sit side by side on big screens, stacked on phones */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 700px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+form,
+section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #a6c2e4;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.15rem;
+  color: #86abd5;
+}
+
+label {
+  display: block;
+  margin-bottom: 14px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+input,
+select {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 4px;
+  padding: 9px;
+  border: 1px solid #86abd5;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #b3122d;
+  outline-offset: 1px;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 14px;
+}
+
+legend {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* radio buttons and checkbox sit next to their text */
+label.inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 16px;
+  font-weight: 400;
+}
+
+label.inline input {
+  width: auto;
+  margin: 0;
+}
+
+.error {
+  display: block;
+  margin-top: 4px;
+  color: #b3122d;
+  font-size: 0.82rem;
+  font-weight: 400;
+}
+
+button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 11px;
+  border: none;
+  border-radius: 6px;
+  background: #b3122d;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #8f0e24;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #e6eaef;
+}
+
+li small {
+  display: block;
+  color: #495866;
+}
+
+.group {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #fbe3e7;
+  color: #b3122d;
+  font-weight: 700;
+}
+
+.empty {
+  color: #5b6773;
+}
